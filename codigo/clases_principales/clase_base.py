@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+# clase abstracta que sirve como base para las clases de cliente, reserva  y servicio
 
 class ClaseBase(ABC):
     def __init__(self, id,nombre):
@@ -11,9 +12,10 @@ class ClaseBase(ABC):
     @property
     def nombre(self): return self._nombre
     
+    # metodos abstractos que deben ser implementados por las clases cliente, reserva y servicio.
     @abstractmethod
     def mostrar_informacion(self):
-        pass
+        pass 
     
     @abstractmethod
     def validar_datos(self):
