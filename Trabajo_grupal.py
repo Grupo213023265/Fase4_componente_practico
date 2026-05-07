@@ -1,1 +1,0 @@
-# desarrollo del programa para el trabajo grupal
