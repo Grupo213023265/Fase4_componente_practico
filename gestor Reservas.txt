@@ -1,0 +1,40 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.time.LocalDate;
+
+public class GestorReservas {
+    private List<Reserva> reservas = new ArrayList<>();
+
+    // Crear nueva reserva
+    public void crearReserva(Cliente cliente, Servicio servicio, LocalDate fecha) {
+        try {
+            Reserva nueva = new Reserva(cliente, servicio, fecha);
+            if(reservas.contains(nueva)) {
+                throw new Exception("La reserva ya existe");
+            }
+            reservas.add(nueva);
+            System.out.println("Reserva creada exitosamente.");
+        } catch (Exception e) {
+            System.err.println("Error al crear reserva: " + e.getMessage());
+        }
+    }
+
+    // Listar reservas
+    public void listarReservas() {
+        if(reservas.isEmpty()) {
+            System.out.println("No hay reservas registradas.");
+        } else {
+            reservas.forEach(r -> System.out.println(r));
+        }
+    }
+
+    // Cancelar reserva
+    public void cancelarReserva(Reserva r) {
+        if(reservas.contains(r)) {
+            r.cancelar();
+            System.out.println("Reserva cancelada.");
+        } else {
+            System.err.println("La reserva no existe.");
+        }
+    }
+}
