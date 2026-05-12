@@ -32,3 +32,6 @@ class CorreoInvalidoError(softwareFJError):
 
 class TelefonoInvalidoError(softwareFJError):
     pass
+
+class ValidationError(softwareFJError):
+    pass
