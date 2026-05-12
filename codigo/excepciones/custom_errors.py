@@ -17,18 +17,18 @@ logging.basicConfig(
 # CLASE BASE PARA LAS EXCEPCIONES
 # =========================
 
-Class softwareFJError(Exception):
+class softwareFJError(Exception):
     def __init__(self,mensaje):
         super().__init__(mensaje)
         logging.error(f"{self.__class__.__name__}: {mensaje}")
 
 # CLASES PARA LAS EXCEPCIONES PERSONALIZADAS
 
-class NombreVacioError(SoftwareFJError):
+class NombreVacioError(softwareFJError):
     pass
 
-class CorreoInvalidoError(SoftwareFJError):
+class CorreoInvalidoError(softwareFJError):
     pass
 
-class TelefonoInvalidoError(SoftwareFJError):
+class TelefonoInvalidoError(softwareFJError):
     pass
