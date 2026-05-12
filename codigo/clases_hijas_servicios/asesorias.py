@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 200ba580f7429893e515e0e69c533ae205550e02
 
 # importamos la clase abstracta Servicio
 from codigo.clases_principales.clase_servicio import Servicio
