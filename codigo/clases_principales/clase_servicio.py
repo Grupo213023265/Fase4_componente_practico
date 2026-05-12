@@ -8,26 +8,22 @@ from codigo.clases_principales.clase_base import ClaseBase
 from abc import ABC, abstractmethod 
 
 # creamos la clase abstracta que representa todos los servicios de la compañia FJ
-class Servicio (ABC):
+class Servicio (ClaseBase,ABC):
        
 # definimos los atributos principales de cualquier servicio y sus espicificaciones 
-    def __init__(self, nombre, precio_base, disponible=True): 
+    def __init__(self, id, nombre, precio_base, disponible=True): 
+        super().__init__(id, nombre)
         # protegemos los atributos para que no sean modificables fuera de la clase 
-        self._nombre = nombre
         self._precio_base = precio_base
         self._disponible = disponible
         
-# codigo para obtener el nombre del servicio utilizando GET
-    def get_nombre(self):
-         return self._nombre 
-
-   
 # codigo para ontener el precio del servicio utilizando GET
-    def get_precio_base(self):
+    @property
+    def precio_base(self):
         return self._precio_base
-
     
 # metodo para saber si esta disponible el servicio utilizando GET
+    @property
     def esta_disponible(self):
         # direccionando true si esta y false si no esta 
          return self._disponible 
