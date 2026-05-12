@@ -29,7 +29,7 @@ class Servicio (ClaseBase,ABC):
          return self._disponible 
      
 # metodo para cambiar si no hay disponibilidad 
-    def cambiar_disponibilidad(self, estado):
+    def cambiar_disponibilidad(self, estado: bool):
          self._disponible = estado
    
 # cada servicio calculara su costo de manera diferente por eso
