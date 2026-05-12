@@ -17,12 +17,12 @@ class Servicio (ClaseBase,ABC):
         self._precio_base = precio_base
         self._disponible = disponible
         
-# codigo para ontener el precio del servicio utilizando GET
+# codigo para ontener el precio del servicio utilizando property
     @property
     def precio_base(self):
         return self._precio_base
     
-# metodo para saber si esta disponible el servicio utilizando GET
+# metodo para saber si esta disponible el servicio utilizando property
     @property
     def esta_disponible(self):
         # direccionando true si esta y false si no esta 
