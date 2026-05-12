@@ -29,6 +29,5 @@ class Asesoria(Servicio):
         return f"Asesoría: {self.nombre} con {self.especialista} ({self.horas} horas)."
 
     def validar_servicio(self):
-        # Al usar setters, la validación ya ocurre al asignar, 
-        # pero podemos dejar el método para cumplir con la interfaz abstracta.
+        
         return True
