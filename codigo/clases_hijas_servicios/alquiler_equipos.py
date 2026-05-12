@@ -1,5 +1,6 @@
 # empezamos importando la clase abstracta servicio de la clase padre 
 from codigo.clases_principales.clase_servicio import Servicio
+from codigo.excepciones.custom_errors import ValidationError
 
 # definir la clase hija heredera de servicios 
 class ServicioEquipo(Servicio):
@@ -18,7 +19,7 @@ class ServicioEquipo(Servicio):
     
         # validamos que los dias sean correctos
         if dias <= 0:
-            raise ValueError("los dias deben ser mayores a 0")
+            raise ValidationError("los dias deben ser mayores a 0")
              
         # multiplicamos el precio base por los dias 
         return self._precio_base * dias
@@ -34,11 +35,11 @@ class ServicioEquipo(Servicio):
         
         # Validar que el equipo no este vacio 
         if not self._tipo_equipo:
-            raise ValueError("el tipo de equipo no puede estar vacio")
+            raise ValidationError("el tipo de equipo no puede estar vacio")
             
         # validamos que el precio sea valido
         if self._precio_base <= 0:
-            raise ValueError("el precio base debe ser mayor a 0")
+            raise ValidationError("el precio base debe ser mayor a 0")
             
         # si todo esta bien retorna a verdadero
         return True
