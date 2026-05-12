@@ -3,12 +3,12 @@ from abc import ABC, abstractmethod
 
 class ClaseBase(ABC):
     def __init__(self, id,nombre):
-        self.id=id
-        self.nombre=nombre
+        self._id=id
+        self._nombre=nombre
     
     @property
     def id(self): return self._id
-    
+        
     @property
     def nombre(self): return self._nombre
     
