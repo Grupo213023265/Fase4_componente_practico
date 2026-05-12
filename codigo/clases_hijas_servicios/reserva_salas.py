@@ -1,5 +1,3 @@
-# antes de ejecutar el proyecto debe actualizar el repositorio
-# para evitar errores con las nuevas excepciones personalizadas
 
 # importamos la clase abstracta Servicio
 from codigo.clases_principales.clase_servicio import Servicio
