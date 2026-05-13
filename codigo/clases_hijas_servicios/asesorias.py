@@ -29,9 +29,9 @@ class Asesoria(Servicio):
     def calcular_costo(self):
         return self.precio_base * self.horas
 
-    def describir_servicio(self):
+    def mostrar_informacion(self):
         return f"Asesoría: {self.nombre} con {self.especialista} ({self.horas} horas)."
 
-    def validar_servicio(self):
+    def validar_datos(self):
         
         return True

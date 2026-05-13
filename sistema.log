@@ -6,3 +6,15 @@
 2026-05-12 18:34:51,323 - ERROR - CorreoInvalidoError: Formato de correo inválido: lauragmail.com
 2026-05-12 18:42:22,830 - ERROR - NombreVacioError: El nombre del cliente no puede estar vacío.
 2026-05-12 18:42:22,831 - ERROR - CorreoInvalidoError: Formato de correo inválido: lauragmail.com
+2026-05-12 21:19:39,492 - ERROR - CorreoInvalidoError: Formato de correo inválido: juan_correo.com
+2026-05-12 21:24:40,052 - ERROR - CorreoInvalidoError: Formato de correo inválido: juan_correo.com
+2026-05-12 21:25:53,739 - ERROR - CorreoInvalidoError: Formato de correo inválido: juan_correo.com
+2026-05-12 21:34:01,418 - ERROR - CorreoInvalidoError: Formato de correo inválido: juan_correo.com
+2026-05-12 21:34:01,419 - ERROR - ValidationError: Debe asignarse un especialista válido.
+2026-05-12 21:34:01,419 - ERROR - ValidationError: El servicio no se encuentra disponible.
+2026-05-12 21:41:49,250 - ERROR - CorreoInvalidoError: Formato de correo inválido: juan_correo.com
+2026-05-12 21:41:49,250 - ERROR - ValidationError: Debe asignarse un especialista válido.
+2026-05-12 21:41:49,251 - ERROR - ValidationError: El servicio no se encuentra disponible.
+2026-05-12 22:05:19,214 - ERROR - CorreoInvalidoError: Formato de correo inválido: juan_correo.com
+2026-05-12 22:05:19,214 - ERROR - ValidationError: Debe asignarse un especialista válido.
+2026-05-12 22:05:19,215 - ERROR - ValidationError: El servicio no se encuentra disponible.
