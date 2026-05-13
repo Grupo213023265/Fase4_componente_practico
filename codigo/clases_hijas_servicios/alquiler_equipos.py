@@ -1,8 +1,8 @@
-# empezamos importando la clase abstracta servicio de la clase padre 
+# importamos las clases necesarias para la construccion de esta clase hija de servicios
 from codigo.clases_principales.clase_servicio import Servicio
 from codigo.excepciones.custom_errors import ValidationError
 
-# definir la clase hija heredera de servicios 
+# definir la clase hija ServicioEquipo que hereda de Servicio y ClaseBase 
 class ServicioEquipo(Servicio):
     
     # Construimos la clase 
@@ -25,13 +25,13 @@ class ServicioEquipo(Servicio):
         return self._precio_base * dias
     
     # descripcion del servicio
-    def describir_servicio(self):
+    def mostrar_informacion(self):
         
         #descripcion del servicio 
         return f"alquiler de equipo tipo: {self._tipo_equipo}"
     
     # validamos el servicio antes de su uso 
-    def validar_servicio(self):
+    def validar_datos(self):
         
         # Validar que el equipo no este vacio 
         if not self._tipo_equipo:

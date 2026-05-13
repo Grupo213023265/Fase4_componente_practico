@@ -40,13 +40,11 @@ class Servicio (ClaseBase,ABC):
 
 # metodo abstracto para descrbir el servicio disponible ya que cada servicio
 # ofrece una informacion distinta 
-    @abstractmethod
-    def describir_servicio(self):
+    def mostrar_informacion(self):
          pass
    
 # metodo abstracto para validar el serivio antes de usar el mismo
-    @abstractmethod
-    def validar_servicio(self):
+    def validar_datos(self):
         pass
 
 # ciere de la clase abstracta servicios.

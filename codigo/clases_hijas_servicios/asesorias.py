@@ -1,3 +1,7 @@
+#inportamos la clase Servicio y la clase ValidationError para poder usar sus funcionalidades en esta clase hija
+from codigo.clases_principales.clase_servicio import Servicio
+from codigo.excepciones.custom_errors import ValidationError
+
 class Asesoria(Servicio):
     def __init__(self, id, nombre, precio_base, horas, especialista):
         super().__init__(id, nombre, precio_base)

@@ -1,0 +1,8 @@
+2026-05-12 18:21:48,403 - ERROR - ValidationError: Las horas de asesoría deben ser mayores a cero.
+2026-05-12 18:22:23,978 - ERROR - ValidationError: Las horas de asesoría deben ser mayores a cero.
+2026-05-12 18:24:34,318 - ERROR - ValidationError: Las horas de asesoría deben ser mayores a cero.
+2026-05-12 18:31:21,659 - ERROR - ValidationError: Las horas de asesoría deben ser mayores a cero.
+2026-05-12 18:34:51,323 - ERROR - NombreVacioError: El nombre del cliente no puede estar vacío.
+2026-05-12 18:34:51,323 - ERROR - CorreoInvalidoError: Formato de correo inválido: lauragmail.com
+2026-05-12 18:42:22,830 - ERROR - NombreVacioError: El nombre del cliente no puede estar vacío.
+2026-05-12 18:42:22,831 - ERROR - CorreoInvalidoError: Formato de correo inválido: lauragmail.com
